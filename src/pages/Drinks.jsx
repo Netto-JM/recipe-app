@@ -18,7 +18,7 @@ function Drinks() {
   }, []);
 
   return (
-    <div className="center-all">
+    <div>
       <Header />
       {
         dataValue.drinks && <Recipes />

@@ -1,21 +1,5 @@
 import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
 import MainContext from '../context/MainContext';
-import imgPlate from '../images/plateIcon.svg';
-import imgCow from '../images/cowIcon.svg';
-import imgGoat from '../images/goatIcon.svg';
-import imgChicken from '../images/chickenIcon.svg';
-import imgBreakfast from '../images/breakfastIcon.svg';
-import imgDessert from '../images/dessertIcon.svg';
-import imgOrdinary from '../images/ordinaryIcon.svg';
-import imgCocktail from '../images/cocktailIcon.svg';
-import imgShake from '../images/shakeIcon.svg';
-import imgOther from '../images/otherIcon.svg';
-import imgCocoa from '../images/cocoaIcon.svg';
-import '../style/Category.css';
-
-const MEALS_ICONS = [imgCow, imgGoat, imgChicken, imgBreakfast, imgDessert];
-const DRINKS_ICONS = [imgOrdinary, imgCocktail, imgShake, imgOther, imgCocoa];
 
 function CategoryButtons() {
   const { categoryFetch, filterFetch } = useContext(MainContext);
@@ -36,49 +20,26 @@ function CategoryButtons() {
   }
 
   return (
-    <div className="category-container">
-      <div
-        className="category-btn"
+    <div>
+      <button
+        data-testid="All-category-filter"
         onClick={ () => filterFetch.setDataValue([]) }
-        role="button"
       >
-      <img
-        className="options-img"
-        src={ imgPlate }
-        alt="type"
-      />
-        <Link
-          className="link-text"
-          data-testid="All-category-filter"
-          onClick={ () => filterFetch.setDataValue([]) }
-        >
-          All
-        </Link>
-      </div>
+        All
+      </button>
       {dataValue.meals && (
         dataValue.meals.slice(0, NUMBER5).map((meal, index) => {
           const { strCategory } = meal;
           return (
-            <div
-              key={ `${strCategory}${index}` }
-              className="category-btn"
-              onClick={ () => toggleFilterMeal(strCategory, URLMEAL) }
-              role="button"
-            >
-              <img
-                className="options-img"
-                src={ MEALS_ICONS[index] }
-                alt="options"
-              />
-              <Link
-                className="link-text"
+            <div key={ `${strCategory}${index}` }>
+              <button
                 data-testid={ `${strCategory}-category-filter` }
                 onClick={
                   () => toggleFilterMeal(strCategory, URLMEAL)
                 }
               >
                 {strCategory}
-              </Link>
+              </button>
             </div>
           );
         })
@@ -87,26 +48,15 @@ function CategoryButtons() {
         dataValue.drinks.slice(0, NUMBER5).map((drinks, index) => {
           const { strCategory } = drinks;
           return (
-            <div
-              key={ `${strCategory}${index}` }
-              className="category-btn"
-              onClick={ () => toggleFilterMeal(strCategory, URLDRINK) }
-              role="button"
-            >
-              <img
-                className="options-img"
-                src={ DRINKS_ICONS[index] }
-                alt="options"
-              />
-              <Link
-                className="link-text"
+            <div key={ `${strCategory}${index}` }>
+              <button
                 data-testid={ `${strCategory}-category-filter` }
                 onClick={
                   () => toggleFilterMeal(strCategory, URLDRINK)
                 }
               >
                 {strCategory}
-              </Link>
+              </button>
             </div>
           );
         })
