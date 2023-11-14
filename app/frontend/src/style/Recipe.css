@@ -1,0 +1,59 @@
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css' ;
+
+@import 'https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap' ;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  font-family: Epilogue , sans-serif;
+  margin: 10px;
+}
+
+.card-recipe {
+  border: 0.518px solid #b1b1b1;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 294px;
+}
+
+.container-recipe {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 360px;
+}
+
+.img-recipe {
+  height: 264.85px;
+  width: 293.35px;
+}
+
+.link-title {
+  text-decoration: none;
+}
+
+.recipe-main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.title-recipe {
+  color: #1a1b1c;
+  font-family: Epilogue , sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  margin-top: 15px;
+  text-decoration: none;
+}

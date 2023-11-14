@@ -1,0 +1,65 @@
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css' ;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.category-container {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  width: 360px;
+}
+
+.options-img {
+  border: 2px solid black;
+  border-color: #fcc436;
+  border-radius: 50%;
+  height: 40px;
+  padding: 3px;
+  width: 40px;
+}
+
+.category-btn {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60px;
+}
+
+.button-category {
+  border: 0.5px solid #b1b1b1;
+  color: #797d86;
+  font-family: Epilogue , sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  margin-right: 0.005px;
+  padding: 7px;
+  text-decoration: none;
+  width: 60px;
+}
+
+.button-category:hover {
+  background-color: #fcc436;
+  color: white;
+}
+
+.button-all {
+  height: 27.25px;
+  margin-top: 0.5px;
+  text-align: center;
+}
+
+.link-text {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+}
+
+.taller {
+  height: 76px;
+}

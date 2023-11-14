@@ -1,0 +1,124 @@
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css' ;
+
+@import 'https://fonts.googleapis.com/css2?family=Epilogue:wght@200;600;900&display=swap' ;
+
+@import url('https://css.gg/share.css') ;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-container {
+  align-items: center;
+  background-color: #fcc436;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  margin-top: 0.1px;
+  width: 100%;
+}
+
+.card-login {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: center;
+  margin-right: 6px;
+  width: 100%;
+}
+
+.details-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-heading {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px 0;
+  padding-left: 5px;
+}
+
+.font-epilogue {
+  font-family: Epilogue , sans-serif;
+}
+
+.img-header {
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.ingredients {
+  margin: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.ingredients-container {
+  width: 95%;
+}
+
+.main-login {
+  align-items: flex-end;
+  background-image: url('../images/imagem (1).jpeg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 640px;
+  justify-content: center;
+  width: 360px;
+}
+
+.recipe-name {
+  color: #f1f1f1;
+  font-family: Epilogue , sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.recipe-name-container {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 0 10px;
+  position: absolute;
+  top: 80px;
+}
+
+.shared {
+  background-color: rgba(252, 196, 54, 0.7);
+  border-radius: 50px;
+  height: 18px;
+  text-align: center;
+  width: 98%;
+}
+
+.start-finish-btn {
+  align-items: center;
+  background-color: #fcc436;
+  border-radius: 50px;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 95%;
+}
+
+.video {
+  width: 100%;
+}
